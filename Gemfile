@@ -34,3 +34,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "acts_as_tenant"
+gem "devise", "~> 4.9"
+
+gem "sidekiq", "~> 7.1"
+
+gem "omniauth", "~> 2.1"

@@ -1,0 +1,22 @@
+<h1>Entities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Subdomain</th>
+      <th>Auth Provider</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @entities.each do |entity| %>
+    <tr>
+      <td><a href="<%= admin_entity_path(entity) %>"><%= entity.name %></a></td>
+      <td><%= entity.subdomain %></td>
+      <td><%= entity.auth_provider %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<a href="/admin/entities/new">Create new entity</a>
